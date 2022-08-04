@@ -32,9 +32,6 @@ namespace whatsapp_busca_por_numeros
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.botao_Procurar = new System.Windows.Forms.Button();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.Foto = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Número = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textBox_DDD = new System.Windows.Forms.TextBox();
             this.textBox_num_inicio = new System.Windows.Forms.TextBox();
             this.textBox_num_fim = new System.Windows.Forms.TextBox();
@@ -50,6 +47,9 @@ namespace whatsapp_busca_por_numeros
             this.button_Exportar = new System.Windows.Forms.Button();
             this.linkLabel_github = new System.Windows.Forms.LinkLabel();
             this.progressBar = new System.Windows.Forms.ProgressBar();
+            this.Foto = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Número = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.groupBox_Numero.SuspendLayout();
             this.groupBox_Pesquisar.SuspendLayout();
@@ -94,28 +94,6 @@ namespace whatsapp_busca_por_numeros
             this.dataGridView.Size = new System.Drawing.Size(444, 456);
             this.dataGridView.TabIndex = 1;
             // 
-            // Foto
-            // 
-            this.Foto.HeaderText = "Foto";
-            this.Foto.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
-            this.Foto.Name = "Foto";
-            this.Foto.ReadOnly = true;
-            this.Foto.Width = 110;
-            // 
-            // Nome
-            // 
-            this.Nome.HeaderText = "Nome";
-            this.Nome.Name = "Nome";
-            this.Nome.ReadOnly = true;
-            this.Nome.Width = 230;
-            // 
-            // Número
-            // 
-            this.Número.HeaderText = "Numero";
-            this.Número.Name = "Número";
-            this.Número.ReadOnly = true;
-            this.Número.Width = 110;
-            // 
             // textBox_DDD
             // 
             this.textBox_DDD.Location = new System.Drawing.Point(51, 13);
@@ -128,14 +106,14 @@ namespace whatsapp_busca_por_numeros
             // 
             this.textBox_num_inicio.Location = new System.Drawing.Point(51, 39);
             this.textBox_num_inicio.Name = "textBox_num_inicio";
-            this.textBox_num_inicio.Size = new System.Drawing.Size(55, 20);
+            this.textBox_num_inicio.Size = new System.Drawing.Size(63, 20);
             this.textBox_num_inicio.TabIndex = 3;
             // 
             // textBox_num_fim
             // 
             this.textBox_num_fim.Location = new System.Drawing.Point(51, 65);
             this.textBox_num_fim.Name = "textBox_num_fim";
-            this.textBox_num_fim.Size = new System.Drawing.Size(55, 20);
+            this.textBox_num_fim.Size = new System.Drawing.Size(63, 20);
             this.textBox_num_fim.TabIndex = 4;
             // 
             // groupBox_Numero
@@ -151,7 +129,7 @@ namespace whatsapp_busca_por_numeros
             this.groupBox_Numero.Size = new System.Drawing.Size(120, 92);
             this.groupBox_Numero.TabIndex = 5;
             this.groupBox_Numero.TabStop = false;
-            this.groupBox_Numero.Text = "Numero";
+            this.groupBox_Numero.Text = "Número";
             // 
             // label_fim
             // 
@@ -262,6 +240,28 @@ namespace whatsapp_busca_por_numeros
             this.progressBar.Size = new System.Drawing.Size(161, 23);
             this.progressBar.TabIndex = 10;
             // 
+            // Foto
+            // 
+            this.Foto.HeaderText = "Foto";
+            this.Foto.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.Foto.Name = "Foto";
+            this.Foto.ReadOnly = true;
+            this.Foto.Width = 110;
+            // 
+            // Nome
+            // 
+            this.Nome.HeaderText = "Nome";
+            this.Nome.Name = "Nome";
+            this.Nome.ReadOnly = true;
+            this.Nome.Width = 230;
+            // 
+            // Número
+            // 
+            this.Número.HeaderText = "Número";
+            this.Número.Name = "Número";
+            this.Número.ReadOnly = true;
+            this.Número.Width = 110;
+            // 
             // whatsapp_busca_por_numeros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -306,10 +306,10 @@ namespace whatsapp_busca_por_numeros
         private System.Windows.Forms.GroupBox groupBox_Salvar;
         private System.Windows.Forms.Button button_Exportar;
         private System.Windows.Forms.LinkLabel linkLabel_github;
+        private System.Windows.Forms.ProgressBar progressBar;
         private System.Windows.Forms.DataGridViewImageColumn Foto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
         private System.Windows.Forms.DataGridViewTextBoxColumn Número;
-        private System.Windows.Forms.ProgressBar progressBar;
     }
 }
 
